@@ -1,2 +1,0 @@
-2025-06-16T23:25:55.750594Z  WARN turborepo_filewatch: failed to remove cookie file failed to remove file `C:\Users\Daniel\Downloads\Daniel\Discord\developer\Dirvault Experiences\Noticias\.turbo\cookies\.turbo-cookie`
-2025-06-16T23:25:55.950530Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
