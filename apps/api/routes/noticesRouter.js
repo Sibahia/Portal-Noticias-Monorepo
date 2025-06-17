@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const { sqlORM } = require('../models/database.js');
+const upload = require('../middleware/multer.js');
 
 const NoticesDB = new sqlORM('./database/news.db');
 
@@ -12,7 +13,7 @@ router.get('/', (req, res) => {
     .catch(error => res.status(400).json(error.message))
 })
 
-router.post('/', (req, res) => {
+router.post('/', upload.single('image'), (req, res) => {
     console.log(req.body)
 
     NoticesDB.insert('notices', {
